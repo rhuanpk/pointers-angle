@@ -2,5 +2,10 @@ package config
 
 import "github.com/rhuanpk/pointers-angle/internal/models"
 
-// Config is the global struct that store all app config.
-var Config *models.Config
+var (
+	// API is the global struct that store all API configuration.
+	API *models.API
+
+	// DB is the global struct that store all DB configuration.
+	DB *models.DB
+)

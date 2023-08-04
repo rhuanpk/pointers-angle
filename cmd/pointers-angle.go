@@ -14,5 +14,5 @@ import (
 )
 
 func main() {
-	logger.Fatal.Fatalln(api.Router.Run(fmt.Sprintf(":%d", *config.Config.API.Port)).Error())
+	logger.Fatal.Fatalln(api.Router.Run(fmt.Sprintf(":%d", *config.API.Port)).Error())
 }

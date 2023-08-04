@@ -1,8 +1,13 @@
 api:
   port: 8080
 db:
-  name: "root"
-  host: "localhost"
-  port: 5432
+  host: "db"
   user: "root"
   pass: "root"
+  name: "pointersangle"
+  port: 5432
+  ssl: "disable"
+  tz: "America/Sao_Paulo"
+  max_idle_conns: 10
+  max_open_conns: 100
+  max_life_sec_conn: 5
