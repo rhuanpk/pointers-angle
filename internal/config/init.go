@@ -6,17 +6,21 @@ import (
 	"github.com/spf13/viper"
 )
 
-// Load load the config file "config.yml" in root directory.
-func Load() {
+func init() {
 	viper.AddConfigPath("./")
 	viper.SetConfigName("config")
+	viper.SetConfigType("yml")
 	viper.AutomaticEnv()
 
 	if err := viper.ReadInConfig(); err != nil {
 		logger.Fatal.Fatalln(err.Error())
 	}
+	viper.WatchConfig()
 
-	if err := viper.Unmarshal(&Config); err != nil {
+	if err := viper.UnmarshalKey("api", &API); err != nil {
+		logger.Fatal.Fatalln(err.Error())
+	}
+	if err := viper.UnmarshalKey("db", &DB); err != nil {
 		logger.Fatal.Fatalln(err.Error())
 	}
 }
