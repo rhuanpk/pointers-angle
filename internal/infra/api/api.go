@@ -7,10 +7,10 @@ import (
 )
 
 var (
-	// Router api router base.
+	// Router is the base router of api.
 	Router = gin.Default()
 
-	// V0 global route groups.
+	// V0 is the global route groups.
 	V0 = Router.Group(
 		"/v0/rest/",
 		middlewares.CORS,
