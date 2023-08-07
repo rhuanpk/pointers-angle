@@ -1,7 +1,7 @@
 api:
   port: 8080
 db:
-  host: "db"
+  host: "database"
   user: "root"
   pass: "root"
   name: "pointersangle"
