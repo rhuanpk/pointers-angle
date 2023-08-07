@@ -19,7 +19,7 @@ As requisiçẽos podem ser feitas por qualquer cliente que consiga se conectar 
 A _URL_ para realizar as requisições via _browser_ ou _CLI_:
 
 ```
-[http://]localhost:8080/v0/rest/clock/<hour>[/<minute>]
+[http://]localhost:8080/v1/rest/clock/<hour>[/<minute>]
 ```
 
 OBS: o _scheme_ da da _URL_ está envolvido em colchetes (`[]`) pois é opcional.

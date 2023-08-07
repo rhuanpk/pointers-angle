@@ -15,7 +15,7 @@ import (
 // Swagger:
 //
 //	@Summary		ANGLE
-//	@Description	Calculate the angle between the clock pointers.
+//	@Description	Calculate the less angle between the clock pointers.
 //	@Tags			clock
 //	@Produce		json
 //	@Param			hour	path		int		true	"The hour."
