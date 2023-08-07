@@ -1,0 +1,82 @@
+basePath: /v0/rest
+definitions:
+  models.HTTP:
+    properties:
+      code:
+        type: integer
+      error:
+        type: string
+    type: object
+host: localhost:8080
+info:
+  contact:
+    email: support@rhuanpk.com
+    name: Rhuan Patriky
+    url: https://linktr.ee/rhuanpk
+  description: API for calculate the less angle between hour and minute pointer.
+  title: Pointer Angles API
+  version: 0.0.0
+paths:
+  /clock/{hour}:
+    get:
+      description: Calculate the angle between the clock pointers.
+      parameters:
+      - description: The hour.
+        in: path
+        name: hour
+        required: true
+        type: integer
+      - description: The minute.
+        in: path
+        name: minute
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Angle JSON response.
+          schema:
+            type: string
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/models.HTTP'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/models.HTTP'
+      summary: ANGLE
+      tags:
+      - clock
+  /clock/{hour}/{minute}:
+    get:
+      description: Calculate the angle between the clock pointers.
+      parameters:
+      - description: The hour.
+        in: path
+        name: hour
+        required: true
+        type: integer
+      - description: The minute.
+        in: path
+        name: minute
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Angle JSON response.
+          schema:
+            type: string
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/models.HTTP'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/models.HTTP'
+      summary: ANGLE
+      tags:
+      - clock
+swagger: "2.0"
