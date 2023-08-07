@@ -1,15 +1,15 @@
 version: '3.8'
 
 services:
-  db:
+  database:
     image: postgres:alpine
-    container_name: pointersangle-db
+    container_name: pointersangle-database
     environment:
       - POSTGRES_PASSWORD=$POSTGRES_PASSWORD
       - POSTGRES_USER=$POSTGRES_USER
       - POSTGRES_DB=$POSTGRES_DB
     volumes:
-      - pointersangle-db:/var/lib/posgresql:rw
+      - pointersangle-database:/var/lib/posgresql:rw
     ports:
       - 5432
     networks:
@@ -25,21 +25,21 @@ services:
     image: adminer:latest
     container_name: pointersangle-dbms
     depends_on:
-      db:
+      database:
         condition: service_healthy
     ports:
       - 8888:8080
     networks:
       - backend
     links:
-      - db
+      - database
     restart: always
 
   api:
     build: ./
     container_name: pointersangle-api
     depends_on:
-      db:
+      database:
         condition: service_healthy
     ports:
       - 8080:8080
@@ -48,7 +48,7 @@ services:
     restart: always
 
 volumes:
-  pointersangle-db:
+  pointersangle-database:
 
 networks:
   backend:
