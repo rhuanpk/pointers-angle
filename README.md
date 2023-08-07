@@ -30,7 +30,7 @@ O modelo de _json_ a ser retornado:
 
 ```json
 {
-	"angle": \<value\>
+	"angle": <value>
 }
 ```
 
