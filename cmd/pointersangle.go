@@ -16,7 +16,7 @@ import (
 // Swagger:
 //
 //	@title			Pointer Angles API
-//	@version		0.0.0
+//	@version		1.0.0
 //	@description	API for calculate the less angle between hour and minute pointer.
 //
 //	@contact.name	Rhuan Patriky
@@ -24,7 +24,7 @@ import (
 //	@contact.email	support@rhuanpk.com
 //
 //	@host			localhost:8080
-//	@BasePath		/v0/rest
+//	@BasePath		/v1/rest
 func main() {
 	logger.Fatal.Fatalln(api.Router.Run(fmt.Sprintf(":%d", *config.API.Port)).Error())
 }

@@ -1,5 +1,5 @@
 package api
 
 func init() {
-	V0.OPTIONS("/*any")
+	V1.OPTIONS("/*any")
 }
