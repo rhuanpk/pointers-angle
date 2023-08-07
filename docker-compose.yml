@@ -38,8 +38,6 @@ services:
   api:
     build: ./
     container_name: pointersangle-api
-    volumes:
-      - ./config.yml:/go/src/app/config.yml:rw
     depends_on:
       db:
         condition: service_healthy
