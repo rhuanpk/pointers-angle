@@ -18,6 +18,10 @@ RUN go mod download && go mod verify
 
 COPY ./ ./
 
+RUN go install github.com/swaggo/swag/cmd/swag@latest \
+&& \
+	swag init -g ./cmd/pointersangle.go -o ./docs/
+
 RUN go build -ldflags '-s -w' -o /go/bin/app ./cmd/
 
 EXPOSE 8080

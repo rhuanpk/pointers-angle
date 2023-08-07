@@ -12,7 +12,7 @@ var (
 
 	// V0 is the global route groups.
 	V0 = Router.Group(
-		"/v0/rest/",
+		"/v0/rest",
 		middlewares.CORS,
 	)
 )

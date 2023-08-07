@@ -12,6 +12,19 @@ import (
 	"gorm.io/gorm"
 )
 
+// Swagger:
+//
+//	@Summary		ANGLE
+//	@Description	Calculate the angle between the clock pointers.
+//	@Tags			clock
+//	@Produce		json
+//	@Param			hour	path		int		true	"The hour."
+//	@Param			minute	path		int		false	"The minute."
+//	@Success		200		{string}	string	"Angle JSON response."
+//	@Failure		400		{object}	models.HTTP
+//	@Failure		500		{object}	models.HTTP
+//	@Router			/clock/{hour} [get]
+//	@Router			/clock/{hour}/{minute} [get]
 func angle(ctx *gin.Context) {
 	var (
 		clockGet *models.Clock

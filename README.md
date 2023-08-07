@@ -10,7 +10,7 @@ As requisiçẽos podem ser feitas por qualquer cliente que consiga se conectar 
 
 - Browser's: Qualquer navegador moderno deverá ser capaz de requisitar a rota, basta digitar a _URL_ na barra de endereços e buscar.
 
-- Swagger: Depois de executando, esta API conta com uma documentação em _Swagger_ na qual, por dentro da própria interface dele é possível realizar a requisição.
+- Swagger: Depois de executando, esta API conta com uma documentação em _swagger_ na qual, por dentro da própria interface dele é possível realizar requisições (o _swagger_ se encontra no link: <http://localhost:8080/swagger/index.html>).
 
 - cURL: Com o comando `curl <url>` também é possível fazer a requisição via terminal ou em _scripts_. Qualquer outra ferramenta _CLI_ que possa ser um cliente HTTP, também é possível fazer a requisição.
 
