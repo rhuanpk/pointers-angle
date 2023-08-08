@@ -14,7 +14,7 @@ A requisição pode ser feita por qualquer cliente que consiga abrir uma conexã
 
 - [cURL](https://curl.se/): Com o comando `curl <url>` também é possível fazer a requisição via terminal ou em _scripts_. Ou com qualquer outra ferramenta _CLI_ que possa ser um cliente _HTTP_.
 
-### URL
+#### URL
 
 A _URL_ para realizar as requisições via _browser_ ou _CLI_:
 
@@ -22,7 +22,7 @@ A _URL_ para realizar as requisições via _browser_ ou _CLI_:
 [http://]localhost:8080/v1/rest/clock/<hour>[/<minute>]
 ```
 
-### Retorno
+#### Retorno
 
 O modelo de _json_ a ser retornado:
 
@@ -48,7 +48,7 @@ Se desejar subir por conta própria o seu banco de dados e gerênciador gráfico
 docker-compose up -d api
 ```
 
-### Sem Docker
+#### Sem Docker
 
 Caso ainda deseje executar a API _standalone_ (sem **docker**), na raiz do projeto há um _shell script_ (`run.sh`) para ser executado com "./":
 
@@ -62,7 +62,7 @@ Para esse caso, é necessário previamente que tenha o [Golang](https://go.dev/)
 go install 'github.com/swaggo/swag/cmd/swag@latest'
 ```
 
-### DBMS
+#### DBMS
 
 Para entrar no gerênciador gráfico, acesse:
 
