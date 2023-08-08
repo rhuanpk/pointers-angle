@@ -48,6 +48,20 @@ Se desejar subir por conta própria o seu banco de dados e gerênciador gráfico
 docker-compose up -d api
 ```
 
+### Sem Docker
+
+Caso ainda deseje executar a API _standalone_ (sem **docker**), na raiz do projeto há um _shell script_ (`run.sh`) para ser executado com "./":
+
+```sh
+./run.sh
+```
+
+Para esse caso, é necessário previamente que tenha o [Golang](https://go.dev/) instalado no seu sistema operacional e execute apenas para a primeira vez:
+
+```sh
+go install 'github.com/swaggo/swag/cmd/swag@latest'
+```
+
 ### DBMS
 
 Para entrar no gerênciador gráfico, acesse:
