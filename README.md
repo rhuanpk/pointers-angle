@@ -10,9 +10,9 @@ A requisição pode ser feita por qualquer cliente que consiga abrir uma conexã
 
 - Browser's: Qualquer navegador moderno deverá ser capaz de requisitar a rota, basta digitar a _URL_ na barra de endereços e buscar.
 
-- (Swagger)[https://swagger.io/]: Esta _API_ conta com a implementação do _swagger_, na qual, por dentro da própria interface dele é possível realizar as requisições (depois de executar a _API_, o _swagger_ se encontrará na _URL_: <http://localhost:8080/swagger/index.html>).
+- [Swagger](https://swagger.io/): Esta _API_ conta com a implementação do _swagger_, na qual, por dentro da própria interface dele é possível realizar as requisições (depois de executar a _API_, o _swagger_ se encontrará na _URL_: <http://localhost:8080/swagger/index.html>).
 
-- (cURL)[https://curl.se/]: Com o comando `curl <url>` também é possível fazer a requisição via terminal ou em _scripts_. Ou com qualquer outra ferramenta _CLI_ que possa ser um cliente _HTTP_.
+- [cURL](https://curl.se/): Com o comando `curl <url>` também é possível fazer a requisição via terminal ou em _scripts_. Ou com qualquer outra ferramenta _CLI_ que possa ser um cliente _HTTP_.
 
 ### URL
 
@@ -34,13 +34,13 @@ O modelo de _json_ a ser retornado:
 
 ## Execução
 
-A infraestrura da _API_ foi projetada para rodar agnosticamente a qualquer "_software_ externo" ou sistema operacional, sendo necessário somente a presença do (**Docker**)[https://docs.docker.com/engine/install/] e (**Docker Compose**)[https://docs.docker.com/compose/install/]. Sendo assim, basta clonar o (repositório do projeto)[https://github.com/rhuanpk/pointers-angle] e estando na raiz, executar:
+A infraestrura da _API_ foi projetada para rodar agnosticamente a qualquer "_software_ externo" ou sistema operacional, sendo necessário somente a presença do [**Docker**](https://docs.docker.com/engine/install/) e [**Docker Compose**](https://docs.docker.com/compose/install/). Sendo assim, basta clonar o [repositório do projeto](https://github.com/rhuanpk/pointers-angle) e estando na raiz, executar:
 
 ```sh
 docker-compose up -d
 ```
 
-Além de colocar a _API_ de pé, este docker compose criará a instância de um banco de dados (**PostgreSQL**)[https://www.postgresql.org/] e também de um leve gerenciador de _DBMS_ ((**Adminer**)[https://www.adminer.org/]).
+Além de colocar a _API_ de pé, este docker compose criará a instância de um banco de dados [**PostgreSQL**](https://www.postgresql.org/) e também de um leve gerenciador de _DBMS_ ([**Adminer**](https://www.adminer.org/)).
 
 Se desejar subir por conta própria o seu banco de dados e gerênciador gráfico, bastará trocar os valores do arquivo de configuração (`config.yml`) localizado na raiz do projeto e na hora de executar o _compose_, chamar somente a _API_:
 
