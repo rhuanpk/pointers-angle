@@ -8,9 +8,9 @@ Ela recebe os valores via _param paths_ (parâmetros de caminho), ou seja, os va
 
 A requisição pode ser feita por qualquer cliente que consiga abrir uma conexão _HTTP_:
 
-- Browser's: Qualquer navegador moderno deverá ser capaz de requisitar a rota, basta digitar a _URL_ na barra de endereços e buscar.
+- Browser's: Qualquer navegador moderno deverá ser capaz de requisitar a rota, basta digitar a _URL_ na barra de endereços e buscar;
 
-- [Swagger](https://swagger.io/): Esta _API_ conta com a implementação do _swagger_, na qual, por dentro da própria interface dele é possível realizar as requisições (depois de executar a _API_, o _swagger_ se encontrará disponível na _URL_: <http://localhost:8080/swagger/index.html>).
+- [Swagger](https://swagger.io/): Esta _API_ conta com a implementação do _swagger_, na qual, por dentro da própria interface dele é possível realizar as requisições (depois de executar a _API_, o _swagger_ se encontrará disponível na _URL_: <http://localhost:8080/swagger/index.html>;
 
 - [cURL](https://curl.se/): Com o comando `curl <url>` também é possível fazer a requisição via terminal ou em _scripts_. Ou com qualquer outra ferramenta _CLI_ que possa ser um cliente _HTTP_.
 
